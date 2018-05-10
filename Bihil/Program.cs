@@ -16,7 +16,7 @@ namespace Bihil
 
             Console.WriteLine(mString.Add("1", "3"));
             Console.WriteLine(mInteger.Add(5, 7));
-            
+              
         }
     }
 }

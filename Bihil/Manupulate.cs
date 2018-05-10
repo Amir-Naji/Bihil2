@@ -9,6 +9,10 @@ namespace Bihil
 {
     public class Manupulate<T>: IManupulate<T>
     {
+        //Sigltone
+        //Factory
+        //IoC
+
         private static Manupulate<T> instance = null;
         private static readonly object padlock = new object();
 

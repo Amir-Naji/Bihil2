@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Bihil
 {
-    public interface IManupulate<T>
+    public static class Extension
     {
-        int Add(T obj1, T obj2);
+        //public static Add(Object obj, object add)
+
     }
 }

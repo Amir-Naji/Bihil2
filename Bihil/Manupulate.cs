@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bihil
 {
-    public class Manupulate<T>: IManupulate<T> where T: IComparable
+    public class Manupulate<T>: IManupulate<T>
     {
         private static Manupulate<T> instance = null;
         private static readonly object padlock = new object();
@@ -33,8 +33,17 @@ namespace Bihil
 
         public int Add(T obj1, T obj2)
         {
-         
-            return obj2.CompareTo(obj2);
+            var result = 0;
+            switch(obj1.GetType().Name)
+            {
+                case "String":
+                    result = Convert.ToInt32(obj1) + Convert.ToInt32(obj2);
+                    break;
+                case "Int32":
+                    result = Convert.ToInt32(obj1) + Convert.ToInt32(obj2);
+                    break;
+            }
+            return result;
         }
     }
 }

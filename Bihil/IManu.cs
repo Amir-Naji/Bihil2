@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bihil
 {
-    public interface IManupulate<T>
+    public interface IManu
     {
-        int Add(T obj1, T obj2);
+        object Add(object obj1, object obj2);
     }
 }

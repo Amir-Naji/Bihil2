@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Bihil
 {
-    public interface IManupulate<T>
+    public class Manu
     {
-        int Add(T obj1, T obj2);
+        //public object Add(object obj1, object obj2)
+        //{
+        //    return obj1 + obj2;
+        //}
     }
 }

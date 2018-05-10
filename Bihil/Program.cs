@@ -13,6 +13,10 @@ namespace Bihil
         {
             IManupulate<string> mString = Manupulate<string>.Instance;
             IManupulate<int> mInteger = Manupulate<int>.Instance;
+
+            Console.WriteLine(mString.Add("1", "3"));
+            Console.WriteLine(mInteger.Add(5, 7));
+            
         }
     }
 }
